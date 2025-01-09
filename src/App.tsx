@@ -11,9 +11,11 @@ const LazyDemo = lazy(
     )
 );
 
+type aType = string;
 const App = () => {
   const [showLazy, setShowLazy] = useState(false);
-
+  const a: aType = 100;
+  console.log(a);
   return (
     <div className='container'>
       <button
@@ -21,7 +23,7 @@ const App = () => {
           setShowLazy(pre => !pre);
         }}
       >
-        展示懒加载组件
+        懒加载
       </button>
       {showLazy && <LazyDemo />}
     </div>

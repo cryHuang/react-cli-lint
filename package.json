@@ -13,7 +13,8 @@
     "build:pre": "cross-env NODE_ENV=production BASE_ENV=pre webpack -c build/webpack.prod.js",
     "build:prod": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.prod.js",
     "build:analy": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.analy.js",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "pre-check": "tsc && npx lint-staged"
   },
   "lint-staged": {
     "src/**/*.{tsx,tsx}": [
@@ -46,6 +47,7 @@
     "glob-all": "^3.3.1",
     "globals": "^15.14.0",
     "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
     "less-loader": "^12.2.0",
     "lint-staged": "^15.3.0",
     "mini-css-extract-plugin": "^2.9.2",
