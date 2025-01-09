@@ -14,7 +14,8 @@
     "build:prod": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.prod.js",
     "build:analy": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.analy.js",
     "eslint": "eslint",
-    "pre-check": "tsc && npx lint-staged"
+    "pre-check": "tsc && npx lint-staged",
+    "prepare": "husky"
   },
   "lint-staged": {
     "src/**/*.{tsx,tsx}": [
