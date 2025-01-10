@@ -1,5 +1,5 @@
 import { lazy, useState } from 'react';
-import '@/index.css';
+import '@/index.less';
 import React from 'react';
 
 const LazyDemo = lazy(

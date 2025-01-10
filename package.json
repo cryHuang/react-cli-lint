@@ -16,7 +16,7 @@
     "eslint": "eslint",
     "pre-check": "tsc && npx lint-staged",
     "prepare": "husky",
-    "postinstall": "husky install"
+    "lint:style": "stylelint src/**/*.{css,less}"
   },
   "lint-staged": {
     "src/**/*.{tsx,tsx}": [
@@ -58,8 +58,13 @@
     "postcss-loader": "^8.1.1",
     "purgecss-webpack-plugin": "^4.1.3",
     "react-refresh": "^0.16.0",
-    "speed-measure-webpack-plugin": "^1.5.0",
     "style-loader": "^4.0.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "stylelint": "^16.12.0",
+    "stylelint-config-recommended-less": "^3.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-less": "^3.0.1",
+    "stylelint-order": "^6.0.4",
     "thread-loader": "^4.0.4",
     "typescript-eslint": "^8.19.1",
     "webpack": "^5.97.1",
