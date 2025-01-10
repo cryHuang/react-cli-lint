@@ -1,30 +1,7 @@
-import { lazy, useState } from 'react';
 import '@/index.less';
 import React from 'react';
 
-const LazyDemo = lazy(
-  () =>
-    import(
-      /* webpackChunkName: "LazyDemo" */
-      /*webpackPrefetch: true*/
-      './component/lazyDemo'
-    )
-);
-
 const App = () => {
-  const [showLazy, setShowLazy] = useState(false);
-
-  return (
-    <div className='container'>
-      <button
-        onClick={() => {
-          setShowLazy(pre => !pre);
-        }}
-      >
-        懒加载
-      </button>
-      {showLazy && <LazyDemo />}
-    </div>
-  );
+  return <div className='container'>webpack搭建react+ts项目</div>;
 };
 export default App;
